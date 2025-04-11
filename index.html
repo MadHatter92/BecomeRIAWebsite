@@ -56,27 +56,18 @@
       border: 2px solid #002244;
     }
     .section {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-direction: row;
       padding: 40px 20px;
       max-width: 800px;
       margin: 20px auto;
       background: white;
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .section.reverse {
-      flex-direction: row-reverse;
-    }
-    .section-content {
-      flex: 1;
+      text-align: center;
     }
     .section img.thumbnail {
       width: 100px;
       height: auto;
-      flex-shrink: 0;
+      margin-bottom: 15px;
       border-radius: 10px;
     }
     .section h2 { color: #002244; margin-bottom: 10px; font-weight: 700; }
@@ -97,8 +88,9 @@
       margin: 10px;
     }
     @media (max-width: 600px) {
-      .section { flex-direction: column; text-align: center; }
-      .section.reverse { flex-direction: column; }
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+      button { padding: 12px 20px; font-size: 0.9rem; }
     }
   </style>
 </head>
@@ -114,39 +106,31 @@
 
   <div class="section">
     <img src="thumbnail-aspiring.png" alt="Aspiring RIA Thumbnail" class="thumbnail">
-    <div class="section-content">
-      <h2>📈 For Aspiring RIAs & RAs</h2>
-      <p>Break into India's fastest-growing finance career. Get expert guidance, NISM exam prep, and mentorship.</p>
-      <a href="https://t.me/becomeRIA"><button class="primary">Start Your Journey</button></a>
-      <button class="secondary" onclick="document.getElementById('popup').style.display='block'">What is a SEBI RIA/RA?</button>
-    </div>
+    <h2>📈 For Aspiring RIAs & RAs</h2>
+    <p>Break into India's fastest-growing finance career. Get expert guidance, NISM exam prep, and mentorship.</p>
+    <a href="https://t.me/becomeRIA"><button class="primary">Start Your Journey</button></a>
+    <button class="secondary" onclick="document.getElementById('popup').style.display='block'">What is a SEBI RIA/RA?</button>
   </div>
 
-  <div class="section reverse">
+  <div class="section">
     <img src="thumbnail-finance.png" alt="Finance Consulting Thumbnail" class="thumbnail">
-    <div class="section-content">
-      <h2>💼 Personal Finance Consulting</h2>
-      <p>From budgeting to retirement, get no-jargon advice tailored to your life. Book a 1-on-1 session with me today.</p>
-      <a href="https://forms.gle/2ztQ87KYDaGYqj8SA"><button class="secondary">Book a Consultation</button></a>
-    </div>
+    <h2>💼 Personal Finance Consulting</h2>
+    <p>From budgeting to retirement, get no-jargon advice tailored to your life. Book a 1-on-1 session with me today.</p>
+    <a href="https://forms.gle/2ztQ87KYDaGYqj8SA"><button class="secondary">Book a Consultation</button></a>
   </div>
 
   <div class="section">
     <img src="thumbnail-webinar.png" alt="Webinar Thumbnail" class="thumbnail">
-    <div class="section-content">
-      <h2>🎙️ Live Webinars</h2>
-      <p>Learn live, ask questions, and become financially confident. Join our next online event.</p>
-      <a href="https://t.me/becomeRIA"><button class="primary">See Upcoming Webinars</button></a>
-    </div>
+    <h2>🎙️ Live Webinars</h2>
+    <p>Learn live, ask questions, and become financially confident. Join our next online event.</p>
+    <a href="https://t.me/becomeRIA"><button class="primary">See Upcoming Webinars</button></a>
   </div>
 
-  <div class="section reverse">
+  <div class="section">
     <img src="thumbnail-sebi.png" alt="SEBI Advisory Thumbnail" class="thumbnail">
-    <div class="section-content">
-      <h2>🛡️ SEBI-Registered Advisory (Coming Soon)</h2>
-      <p>Once licensed, I will offer professional RIA/RA services. Sign up to be the first to know.</p>
-      <button class="secondary">Notify Me</button>
-    </div>
+    <h2>🛡️ SEBI-Registered Advisory (Coming Soon)</h2>
+    <p>Once licensed, I will offer professional RIA/RA services. Sign up to be the first to know.</p>
+    <button class="secondary">Notify Me</button>
   </div>
 
   <div class="section">
