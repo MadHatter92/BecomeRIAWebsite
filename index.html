@@ -70,6 +70,20 @@
       .hero p { font-size: 1rem; }
       button { padding: 12px 20px; font-size: 0.9rem; }
     }
+      .about-image {
+      width: 65%;
+      max-width: 500px;
+      display: block;
+      margin: 0 auto 20px auto;
+      border-radius: 8px;
+      border: 4px solid #f0f0f0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .about-image:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
   </style>
 </head>
 <body>
@@ -83,7 +97,7 @@
   </div>
 
   <div class="section">
-    <img src="ps-header.jpeg" alt="Working seriously at desk" style="width: 65%; max-width: 500px; display: block; margin: 0 auto 20px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+    <img src="ps-header.jpeg" alt="Working seriously at desk" class="about-image">
     <h2>About Me</h2>
     <p>
       I'm a former investment banker with over 10 years of experience in Corporate Finance, M&A, and Strategy. Over the course of my career, I've advised on M&A transactions exceeding <strong>$10 billion</strong> across India, the UK, and the UAE. I've also managed funds with Assets Under Management (AUM) of more than <strong>INR 1,000 crore</strong>, working closely with institutional investors and corporate stakeholders.
